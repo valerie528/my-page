@@ -4,7 +4,36 @@
 <head>
     <meta charset="UTF-8">
   <title>Holy Grail with Flexbox</title>
-  <link rel="stylesheet" href="holygrail.css">
+  <style>
+      body { margin:0px; }
+        
+.fc > * {
+  margin: 10px;
+  padding: 20px; 
+  background-color: lightgray;
+  border-radius: 10px;
+}
+
+.fc { 
+    display: flex;
+    flex-flow: row wrap;
+  }
+
+  .fc > * { 
+    flex: 1; 
+  }
+
+  .fc header, .fc footer { 
+  flex: 0 1 100vw; 
+}
+
+.fc { min-height: calc(100vh - 200px); } 
+
+header, footer {
+  box-sizing: border-box;
+  width: 100vw;
+  height: 100px;
+  </style>
 </head>
 
 <body>

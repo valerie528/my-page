@@ -1,43 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <title>My HTML page</title>
-        <style>
-    body {
-    background-color: purple;
-    text-align: left;
-    font-family: serif;
-    padding: 0;
-    margin: 0;
-}
-h1 {
-    color: white;
-    font-size: 8em;
-  
-}
-h2 {
-    color: #FE4365;
-    background-color: #F9CDAD;
-}
-p {
-    color: fuchsia;
-    font-size: 2em;
-}
-ul{
-    background-color: silver;
-}
-        </style>
-    </head>
-    <body>
-        <h1>My H1 header</h1>
-        <p> This is a block of text to represent a paragraph that you will want to style. This might be an explanation of of the list that follows, it is all contained within a single paragraph tag.
-        </p>
-        <ul>
-           <li>This is list item 1</li>
-           <li>Item 2 in the list</li>
-           <li>The third item in the list</li>
-           <li>Item 4 completes the list</li>
-        </ul>
-    </body>
+
+<head>
+    <meta charset="UTF-8">
+  <title>Holy Grail with Flexbox</title>
+  <link rel="stylesheet" href="holygrail.css">
+</head>
+
+<body>
+<div class="fc">
+    <header>the header</header>
+    <aside>
+        The Dynamic Websites – Server-side programming topic is a series of modules that show how to 
+        create dynamic websites; websites that deliver customised information in response to HTTP requests. 
+        The modules provide a general introduction to server-side programming, along with specific 
+        beginner-level guides on how to use the Django (Python) and Express (Node.js/JavaScript) web 
+        frameworks to create basic applications.
+
+        Most major websites use some kind of server-side technology to dynamically display data as required. 
+        For example, imagine how many products are available on Amazon, and imagine how many posts have been 
+        written on Facebook. 
+        Displaying all of these using different static pages would be extremely inefficient, so instead such 
+        sites display static templates (built using HTML, CSS, and JavaScript), and then dynamically update 
+        the data displayed inside those templates when needed, such as when you want to view a different 
+        product on Amazon.
+        
+        In the modern world of web development, learning about server-side development is highly recommended.
+    </aside>
+    <main>
+        Learning pathway
+        Getting started with server-side programming is usually easier than client-side development, because 
+        dynamic websites tend to perform a lot of very similar operations (retrieving data from a database and 
+        displaying it in a page, validating user-entered data and saving it in a database, checking user 
+        permissions and logging users in, etc.), and are constructed using web frameworks that make these and 
+        other common web server operations easy.
+        
+        Basic knowledge of programming concepts (or of a particular programming language) is useful, but not 
+        essential. Similarly, expertise in client-side coding is not required, but a basic knowledge will help 
+        you work better with the developers creating your client-side web "front end".
+    </main>
+    <section>
+        Modules
+        This topic contains the following modules. You should start with the first module, then go on to one 
+        of the following modules, which show how to work with two very popular server-side languages using 
+        appropriate web frameworks. 
+
+        Server-side website programming first steps
+        This module provides technology-agnostic information about server-side website programming such as 
+        "what is it?", "how does it differ from client-side programming?", and "why is it useful?". This 
+        module also outlines some of the more popular server-side web frameworks and gives guidance on how 
+        to select the best one for your site. Lastly, an introduction to web server security is provided.
+        Django Web Framework (Python)
+        Django is an extremely popular and fully featured server-side web framework, written in Python. The 
+        module explains why Django is such a good web server framework, how to set up a development environment 
+        and how to perform common tasks with it.
+        Express Web Framework (Node.js/JavaScript)
+        Express is a popular web framework, written in JavaScript and hosted within the node.js runtime 
+        environment. The module explains some of the key benefits of this framework, how to set up your 
+        development environment and how to perform common web development and deployment tasks.
+    </section>
+    <footer>
+        See also
+        Node server without framework
+        This article provides a simple static file server built with pure Node.js, for those of you not 
+        wanting to use a framework.
+        Properly configuring server MIME types
+        Configuring your server to send the correct MIME types (also known as media types or content types) 
+        to browsers is important for browsers to be able to properly process and display the content. It is 
+        also important to prevent malicious content from masquerading as benign content.
+    </footer>
+</div>
+     
+</body>
 </html>
